@@ -5,8 +5,13 @@
 @viewport { width: device-width; scale: 1; }
 
 html {
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
   box-sizing: border-box;
-
+  font-family: sans-serif;
+  text-align: center;
 }
 
 *, *::before, *::after {
@@ -15,4 +20,30 @@ html {
 
 body {
   margin: 0;
+}
+
+header {
+  background-color: #e2e2e2;
+}
+
+a {
+  color: #0074d9;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #0074d9;
+  color: #fff;
+}
+
+nav li {
+  display: inline-block;
+}
+
+@media only screen and (min-width: 38em) {
+
+  html {
+    text-align: left;
+  }
+
 }
